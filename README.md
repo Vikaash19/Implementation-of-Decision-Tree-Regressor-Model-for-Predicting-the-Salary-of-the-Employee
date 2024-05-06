@@ -25,11 +25,11 @@ data.info()
 data.isnull().sum()
 from sklearn.preprocessing import LabelEncoder
 le=LabelEncoder()
-```
-```
 data["Position"]=le.fit_transform(data["Position"])
 data.head()
 x=data[["Position","Level"]]
+```
+```
 x.head()
 y=data["Salary"]
 from sklearn.model_selection import train_test_split
@@ -43,9 +43,7 @@ r2=metrics.r2_score(y_test,y_pred)
 r2
 dt.predict([[5,6]])
 
-*/
 ```
-
 ## Output:
 #### data.head()
 ![Screenshot 2023-06-03 182518](https://github.com/Yamunaasri/Implementation-of-Decision-Tree-Regressor-Model-for-Predicting-the-Salary-of-the-Employee/assets/115707860/74928a7e-5490-4f21-a455-081786ea5ce3)
