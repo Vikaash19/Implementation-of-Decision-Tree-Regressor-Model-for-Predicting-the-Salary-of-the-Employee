@@ -15,7 +15,6 @@ To write a program to implement the Decision Tree Regressor Model for Predicting
 
 ## Program:
 ```
-/*
 Program to implement the Decision Tree Regressor Model for Predicting the Salary of the Employee.
 Developed by: VIKAASH K S
 RegisterNumber:  212223240179
@@ -26,6 +25,8 @@ data.info()
 data.isnull().sum()
 from sklearn.preprocessing import LabelEncoder
 le=LabelEncoder()
+```
+```
 data["Position"]=le.fit_transform(data["Position"])
 data.head()
 x=data[["Position","Level"]]
