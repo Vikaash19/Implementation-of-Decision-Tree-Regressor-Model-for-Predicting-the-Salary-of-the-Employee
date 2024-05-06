@@ -29,9 +29,10 @@ le=LabelEncoder()
 data["Position"]=le.fit_transform(data["Position"])
 data.head()
 x=data[["Position","Level"]]
-```
 
 ```
+```
+
 x.head()
 y=data["Salary"]
 from sklearn.model_selection import train_test_split
@@ -44,6 +45,7 @@ mse
 r2=metrics.r2_score(y_test,y_pred)
 r2
 dt.predict([[5,6]])
+
 
 ```
 ## Output:
